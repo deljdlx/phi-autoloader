@@ -1,0 +1,12 @@
+{
+	"name": "phi-autoloader",
+	"description": "Phi autoloader",
+
+
+	"autoload": {
+		"psr-4": {
+			"Phi\\Autoloader\\": "source/class"
+		},
+		"files": ["source/helper.php"]
+	}
+}
