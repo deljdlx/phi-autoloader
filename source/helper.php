@@ -5,7 +5,7 @@ function registerNamespace($namespace, $folder)
     static $autoloader;
     static $componentAutoloader;
     if (!$autoloader) {
-        $autoloader = new \Phi\Autoloader();
+        $autoloader = new \Phi\Autoloader\Autoloader();
         spl_autoload_register(function ($calledClassName) use ($autoloader) {
             $autoloader->autoload($calledClassName);
         });
